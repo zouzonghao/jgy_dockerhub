@@ -20,7 +20,7 @@
 	```
 2. 使用 echo 命令将内容追加到 /etc/hosts 文件中, 对照着，将8.8.8.8换掉
 	```
-	!echo -e "127.0.0.1\tlocalhost\n::1\tlocalhost ip6-localhost ip6-loopback\nfe00::0\tip6-localnet\nff00::0\tip6-mcastprefix\nff02::1\tip6-allnodes\nff02::2\tip6-allrouters\n172.28.0.12\t9445d586e4d8\n142.171.21.19\tdav.jianguoyun.com" | sudo tee /etc/hosts
+	!echo -e "127.0.0.1\tlocalhost\n::1\tlocalhost ip6-localhost ip6-loopback\nfe00::0\tip6-localnet\nff00::0\tip6-mcastprefix\nff02::1\tip6-allnodes\nff02::2\tip6-allrouters\n172.28.0.12\t9445d586e4d8\n8.8.8.8\tdav.jianguoyun.com" | sudo tee /etc/hosts
 	```
 
 3. 测试能否正常访问坚果云（坚果云根目录建一个docker文件夹）
